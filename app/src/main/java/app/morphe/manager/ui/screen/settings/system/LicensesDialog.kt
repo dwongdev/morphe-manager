@@ -161,7 +161,7 @@ private fun AutoLinkText(
             append(text.substring(lastIndex))
         }
     }
-
+    @Suppress("DEPRECATION")
     ClickableText(
         text = annotated,
         modifier = modifier,
