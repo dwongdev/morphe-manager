@@ -46,7 +46,7 @@ The website will guide you to the latest release for your device. No account nee
 3. **Choose your mode:**
   - **Simple mode** - designed for a one-tap experience. Just tap Patch and Morphe handles the rest with sensible defaults. No configuration needed.
   - **Expert mode** - gives you full control. Choose exactly which of the 100+ patches to apply, configure per-patch options (colors, toggles, and more), and fine-tune everything before patching.
-4. **Provide the APK** - Morphe guides you through obtaining the original app file via step-by-step dialogs. The patching itself happens entirely on your device.
+4. **Provide the APK** - Morphe guides you through obtaining the original app file via step-by-step dialogs. The patching itself happens entirely on your device. *(If you can't select the APK file, try moving it out of the Downloads folder to the root of your internal storage.)*
 5. **Install and enjoy** - once patching is complete, install the result like any normal APK.
 
 Everything happens locally. Morphe never uploads your APKs or personal data anywhere.
@@ -59,6 +59,8 @@ Everything happens locally. Morphe never uploads your APKs or personal data anyw
 - Expert mode also shows an expanded patching screen with real-time logs and live RAM usage monitoring during patching
 - 100+ patches for YouTube, YouTube Music, and Reddit
 - Support for split APKs
+- Skips split APK modules for unsupported CPU architectures, locales, and screen densities during merge
+- Strips native libraries for unsupported architectures from plain APKs after patching
 
 **Patch options** *(Simple mode: available in the Advanced tab; Expert mode: available on the patch selection screen)*
 - Custom app display name and header logo per app
@@ -91,6 +93,7 @@ Everything happens locally. Morphe never uploads your APKs or personal data anyw
 - Manage saved patch selections per app
 - GitHub Personal Access Token support for higher API rate limits
 - Process runtime - run patching in a separate process for better stability, with configurable memory limit
+- Bytecode processing mode - controls how bytecode is processed during patching, affecting patching speed, memory usage, and output APK size
 - Export debug logs for troubleshooting
 
 ## ❓ New to GitHub?
@@ -105,6 +108,11 @@ If you ended up here but aren't sure what to do next - no worries. Here's the sh
 That's it. Once Morphe is installed, everything else happens inside the app.
 
 For guides, FAQs, and troubleshooting, visit **[morphe.software](https://morphe.software)** or join the community on **[Reddit](https://www.reddit.com/r/MorpheApp)**.
+
+## 📙 Contributing
+
+Thank you for considering contributing to Morphe Manager.
+You can find the contribution guidelines [here](CONTRIBUTING.md).
 
 ## ❗ About
 
